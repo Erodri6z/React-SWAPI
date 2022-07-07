@@ -26,18 +26,6 @@ const StarshipPage = () => {
         <div className="starshipdetails-container">
           <div>Name: {starshipDetails.name}</div>
           <div>Model: {starshipDetails.model} </div>
-          <div>Pilot:</div>
-          {starshipDetails.pilots?.length ?
-          <>
-            {pilotsObject.map(names =>
-              <div key={pilots.names}>
-                <h4>{pilot.names}</h4>
-              </div>
-              )}
-          </>
-          :
-          <p>No Pilots</p>
-          }
           <div><Link to='/'>Return</Link></div>
         </div>
       </>
@@ -46,7 +34,7 @@ const StarshipPage = () => {
         <p>Loading Starship...</p>
       </>
       }
-   </>
+  </>
   );
 }
  
