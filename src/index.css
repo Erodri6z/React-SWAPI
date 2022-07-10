@@ -5,9 +5,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  background-color: rgb(25, 25, 89);
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#ships{
+  background-color: rgb(65, 65, 82);
+  margin: 10px;
+  padding: 20px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+#ship-container{
+  display: flex;
+  color: white;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#details{
+  background-color: rgb(65, 65, 82);
+  padding: 30px;
 }

@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { getAllStarships } from '../../services/sw-api'
 import { Link } from 'react-router-dom'
 
-
 const StarshipList = () => {
   const [starships, setStarships] = useState([])
 
@@ -19,10 +18,10 @@ const StarshipList = () => {
       <h3>Starship List</h3>
       { starships ?
       <>
-        <div className="starship-container">
+        <div id="ship-container" className="starship-container">
           {starships.map(starship =>
             <Link key={starship.name} state={{ starship }} to='/starship'>
-              <div className="starship-div">
+              <div id="ships" className="starship-div">
                 {starship.name}
               </div>
             </Link>

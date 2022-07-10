@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 
 
+
 const StarshipPage = () => {
     const [starshipDetails, setStarshipDetails] = useState({})
     const location = useLocation()
@@ -23,7 +24,7 @@ const StarshipPage = () => {
       <h2>Starship Page Component</h2>
       {starshipDetails ?
       <>
-        <div className="starshipdetails-container">
+        <div id="details"className="starshipdetails-container">
           <div>Name: {starshipDetails.name}</div>
           <div>Model: {starshipDetails.model} </div>
           <div><Link to='/'>Return</Link></div>
@@ -37,5 +38,5 @@ const StarshipPage = () => {
   </>
   );
 }
- 
+
 export default StarshipPage;
